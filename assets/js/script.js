@@ -27,28 +27,31 @@ Calcolare il prezzo totale del viaggio, secondo queste regole:
 
 const distance = prompt("kilometers traveled")
 console.log(distance);
-
+// add prompt to add how many km the user will travel
 const price = distance * 0.21
 console.log(price);
-
+// calculates the price based on the total distance
 const age = prompt("age of user")
 console.log(age);
-
+// add prompt to add how old the user is
 
 if (age < 18) {
     const underage = price - ((price * 20) / 100)
-    console.log(underage);
-
+    const underageDecimal = underage.toFixed(2)
+    console.log(underageDecimal);
 }
+// if user is under 18 this will apply a 20% discount to the price
 else if (age > 65) {
     const veteran = price - ((price * 40) / 100)
-    console.log(veteran);
-
+    const veteranDecimal = veteran.toFixed(2)
+    console.log(veteranDecimal);
 }
+// if user is over 65 this will apply a 40% discount to the price
 else {
     const normal = price
-    console.log(normal);
-
+    const normalDecimal = normal.toFixed(2)
+    console.log(normalDecimal);
 }
+// if user is over 18 and below 65, he will pay the regual price with no discount
 
 
