@@ -15,10 +15,17 @@ Calcolare il prezzo totale del viaggio, secondo queste regole:
 -variables: let/const for the ages (<18 and >65)
 -alert: to have a visual representation of the code
 -console.log: to test the code in the console
+
 -If age <18 true --> apply 20% discount
 -Else If age >65 true --> apply 40% disocunt
 -Else apply 0% discount
+
 -number of km?
 -const: 0.21 euro/km
 
 */
+const age = prompt("age of user")
+console.log(age);
+
+const distance = prompt("kilometers traveled")
+console.log(distance);
