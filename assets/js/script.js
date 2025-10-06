@@ -24,8 +24,13 @@ Calcolare il prezzo totale del viaggio, secondo queste regole:
 -const: 0.21 euro/km
 
 */
-const age = prompt("age of user")
-console.log(age);
 
 const distance = prompt("kilometers traveled")
 console.log(distance);
+
+const Price = distance * 0.21
+console.log(Price);
+
+const age = prompt("age of user")
+console.log(age);
+
